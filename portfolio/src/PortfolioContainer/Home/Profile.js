@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import './Profile.css';
 
 export default function Profile() {
   return (
@@ -44,7 +45,7 @@ export default function Profile() {
                                1000,
                                "Full Stack Developer 💻",
                                1000,
-                               "MERN Stack Dev",
+                               "MERN Stack Dev 📚",
                                1000,
                                "Cross Platform Dev ✯",
                                1000,
