@@ -89,6 +89,7 @@
     transform: scale(1.5);
 }
 
+/* responsiveness on all devices */
 @media screen and (max-width: 1110px) {
     .profile-picture{
         margin: 0 0px 0 80px;
