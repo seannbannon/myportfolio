@@ -19,7 +19,7 @@
      font-family: "Poppins ExtraBold";
      color: var(--white);
  }
-
+/* this? */
  .header-options{
      display: flex;
      align-items: center;
