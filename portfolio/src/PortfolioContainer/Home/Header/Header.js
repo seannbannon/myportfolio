@@ -51,8 +51,6 @@ export default function Header() {
         setShowHeaderOptions(false);
     };
 
-
-
     // useEffect(() => {
     //     return () => {
     //       currentScreenSubscription.unsubscribe();
