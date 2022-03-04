@@ -51,3 +51,16 @@
     margin: 5px 0;
     font-size: 12px;
 }
+
+.highlight-blob{
+    height: 12px;
+    width: 12px;
+    margin: 0 10px 0 0;
+    background-color: #ff5823;
+    /* border radius turns these currently square bullets to circles! */
+    border-radius: 50%;
+}
+
+.about-me-options .highlighted-btn{
+    margin: 0 0 0 30px;
+}
