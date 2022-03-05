@@ -125,7 +125,50 @@ export default function Resume(props) {
                 <span className='resume-description-text'>
                 - I stretch my mental capacity to develop UI as per the given designs.
                 </span>
-            </div>
+            </div>,
+                <div className='resume-screen-container programming-skills-container'
+                key= "programming-skills"
+                >
+                    {programmingSkillDetails.map((skill,index)=>(
+                        <div className='skill-parent' key={index}>
+                            <div className='heading-bullet'></div>
+                            <span>{skill.skill}</span>
+                            <div className='skill-percentage'>
+                                <div style = {{width: skill.ratingPercentage + "%"}}
+                                className = 'active-percentage'>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>,
+
+                <div className='resume-screen-container' key = "projects">
+                    {projectDetails.map((projectDetails, index)=>(
+                        <ResumeHeading
+                        key = {index}
+                        heading = {projectDetails.title}
+                        subHeading = {projectDetails.subHeading}
+                        description = {projectDetails.description}
+                        fromDate = {projectDetails.duration.fromDate}
+                        toDate = {projectDetails.duration.toDate}
+                        />
+                    ))}
+                </div>,
+
+                <div className='resume-screen-container'  key = "interests">
+                    <ResumeHeading
+                    heading = "Guitar Playing"
+                    description = "I love falling into the flow of music. It's very relaxing and fun."
+                    />
+                     <ResumeHeading
+                    heading = "Writing"
+                    description = "I love writing short stories. The places writing can take you can be places you didn't even know were in you."
+                    />
+                     <ResumeHeading
+                    heading = "Gardening"
+                    description = "Watching plants grow is extremely rewarding. Getting to use what you grow is an added perk at the end. "
+                    />
+                </div>
 
         </div>
 
