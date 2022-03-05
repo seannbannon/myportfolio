@@ -55,7 +55,7 @@ export default function Resume(props) {
             title: "Personal Portfolio Website",
             duration: {fromDate: "2021", toDate:"2022"},
             description: "A Personal Portfolio website to shocase all my details and projects in one place.",
-            subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS"
+            subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS",
         },
         {
             title: "Filler in L8r",
@@ -70,6 +70,44 @@ export default function Resume(props) {
             subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS"
         },
     ];
+
+    const resumeDetails = [
+        <div className='resume-screen-container' key = "education">
+            <ResumeHeading
+            heading = {"Northwestern University, Chicago, IL"}
+            subHeading = {"FULL STACK WEB DEVELOPMENT BOOTCAMP"}
+            fromDate = {"2021"}
+            toDate = {"2021"}
+            />
+            <ResumeHeading
+            heading = {"Purdue University Calumet, Hammond, IN"}
+            subHeading = {"BACHELOR OF ARTS IN HUMAN RESOURCE MANAGEMENT"}
+            fromDate = {"2012"}
+            toDate = {"2015"}
+            />
+            <ResumeHeading
+            heading = {"Prairie State College, Chicago Heights, IL"}
+            subHeading = {"ASSOCIATE OF ARTS IN LIBERAL ARTS"}
+            fromDate = {"2010"}
+            toDate = {"2012"}
+            />
+            <ResumeHeading
+            heading = {"Homewood-Flossmoor High School, Flossmoor, IL"}
+            subHeading = {"HIGH SCHOOL DIPLOMA"}
+            fromDate = {"2006"}
+            toDate = {"2010"}
+            />
+        </div>,
+        <div className='resume-screen-container' key = "work-experience">
+            <ResumeHeading
+            heading = {"Freelance Develeoper"}
+            subHeading = {"FULL STACK DEVELOPER"}
+            fromDate = {"2021"}
+            toDate = {"present"}
+            />
+        </div>
+
+    ]
 
     let fadeInScreenHandler = (screen) => {
         if(screen.fadeScreen !== props.id)
