@@ -105,6 +105,28 @@ export default function Resume(props) {
             fromDate = {"2021"}
             toDate = {"present"}
             />
+            <div className='experience-description'>
+                <span className='resume-description-text'>
+                    Currently working as a MERN stack web and mobile developer for hire.
+                </span>
+            </div>
+
+            <div className='experience-description'>
+                <span className='resume-description-text'>
+                - Developed an ecommerce website for a client with the dashboard for managing the products,
+                 managing review, users, payment, etc. 
+                </span>
+                <br/>
+                <span className='resume-description-text'>
+                - Integrated the web app with backend services to create new user 
+                onboarding application with dynamic form content.
+                </span>
+                <br/>
+                <span className='resume-description-text'>
+                - I stretch my mental capacity to develop UI as per the given designs.
+                </span>
+            </div>
+
         </div>
 
     ]
