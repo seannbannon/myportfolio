@@ -8,6 +8,15 @@ export default function Resume(props) {
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
     const [carousalOfSetStyle, setCarousalOfSetStyle] = useState({});
 
+    let fadeInScreenHandler = (screen) => {
+        if(screen.fadeScreen !== props.id)
+        return;
+        Animations.animations.fadeInScreen(props.id);
+      };
+  
+    const fadeInSubscription =
+        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
     const ResumeHeading = (props) =>{
         <div className='resume-heading'>
             <div className='resume-main-heading'>
@@ -169,24 +178,57 @@ export default function Resume(props) {
                     description = "Watching plants grow is extremely rewarding. Getting to use what you grow is an added perk at the end. "
                     />
                 </div>
-
         </div>
+    ];
 
-    ]
+    const handleCarousal = (index) => {
+        let offsetHeight = 360;
+        let newCarousalOffset = {
+            style: {transform: "translateY("+ index * offsetHeight * -1 + "px)"},
+        };
+        setCarousalOfSetStyle(newCarousalOffset);
+        setSelectedBulletIndex(index);
+    };
 
-    let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id)
-        return;
-        Animations.animations.fadeInScreen(props.id);
-      };
-  
-      const fadeInSubscription =
-        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    const getBullets = () => {
+        return resumeBullets.map((bullet, index) => (
+            <div
+            onClick={() => handleCarousal(index)}
+            className = {index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"}
+            key = {index}>
+                <img className='bullet-logo'
+                src = {require (`../../assets/Resume/${bullet.logoSrc}`)}
+                alt = 'Oops... No Internet Connection'
+                />
+
+            </div>
+        ))
+    }
+
+    const getResumeScreen = () => {
+        return(
+            <div
+            style = {carousalOfSetStyle.style}
+            className = 'resume-details-carousal'
+            >
+                {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+            </div>
+        );
+    };
 
     return (
      <div className='resume-container screen-container' id = {props.id || ""}>
          <div className='resume-content'>
              <ScreenHeading title={'Resume'} subHeading={'My Formal Bio Details'}/>
+             <div className='resume-card'>
+                 <div className='resume-bullets'>
+                     <div className='bullet-container'>
+                         <div className='bullet-icons'></div>
+                         <div className='bullets'>{getBullets()}</div>
+                     </div>
+                 </div>
+                 <div className='resume-bullet-details'>{getResumeScreen()}</div>
+             </div>
          </div>
 
      </div>
