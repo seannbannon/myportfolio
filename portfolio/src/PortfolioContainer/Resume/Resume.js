@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
-import './Resume.css'
+import './Resume.css';
 
 
 export default function Resume(props) {
@@ -84,7 +84,7 @@ export default function Resume(props) {
     ];
 
     const resumeDetails = [
-        <div className='resume-screen-container' key = "education">
+        <div className='resume-screen-container' key = "Education">
             <ResumeHeading
             heading = {"Northwestern University, Chicago, IL"}
             subHeading = {"FULL STACK WEB DEVELOPMENT BOOTCAMP"}
@@ -203,10 +203,10 @@ export default function Resume(props) {
                 src = {require (`../../assets/Resume/${bullet.logoSrc}`).default}
                 alt = 'Oops... No Internet Connection'
                 />
-
+                <span className='bullet-label'>{bullet.label}</span>
             </div>
-        ))
-    }
+        ));
+    };
 
     const getResumeScreen = () => {
         return(
@@ -220,7 +220,10 @@ export default function Resume(props) {
     };
 
     return (
-     <div className='resume-container screen-container' id = {props.id || ""}>
+     <div 
+        className='resume-container screen-container' 
+        id = {props.id || ""}
+     >
          <div className='resume-content'>
              <ScreenHeading title={'Resume'} subHeading={'My Formal Bio Details'}/>
              <div className='resume-card'>
@@ -230,10 +233,12 @@ export default function Resume(props) {
                          <div className='bullets'>{getBullets()}</div>
                      </div>
                  </div>
+
                  <div className='resume-bullet-details'>{getResumeScreen()}</div>
              </div>
          </div>
-
      </div>
     );
-}
+};
+
+// export default Resume;
