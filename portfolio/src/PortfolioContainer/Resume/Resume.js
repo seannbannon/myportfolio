@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
+import './Resume.css'
 
 
 export default function Resume(props) {
@@ -199,7 +200,7 @@ export default function Resume(props) {
             className = {index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"}
             key = {index}>
                 <img className='bullet-logo'
-                src = {require (`../../assets/Resume/${bullet.logoSrc}`)}
+                src = {require (`../../assets/Resume/${bullet.logoSrc}`).default}
                 alt = 'Oops... No Internet Connection'
                 />
 
