@@ -215,10 +215,12 @@ const Resume = (props) => {
             className = {index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"}
             key = {index}>
                 <img className='bullet-logo'
-                src = {require (`../../assets/Resume/${bullet.logoSrc}`).default}
+                src = {require (`../../assets/Resume/${bullet.logoSrc}`)}
                 alt = 'F'
                 />
                 <span className='bullet-label'>{bullet.label}</span>
+                {console.log(bullet.logoSrc)}
+
             </div>
         ));
     };
