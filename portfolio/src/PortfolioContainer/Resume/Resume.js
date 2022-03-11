@@ -145,7 +145,6 @@ const Resume = (props) => {
                     - I stretch my mental capacity to develop UI as per the given designs.
                     </span>
                     <br/>
-                    /* apparently this div shouldnt b here */
                 </div>
             </div>
         </div>,

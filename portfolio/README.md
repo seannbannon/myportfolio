@@ -7,4 +7,3 @@ hamburger on mobile
 remove watermark
 blob cenetring
 (maybe responsiveness, a little)
-Icons on resume
