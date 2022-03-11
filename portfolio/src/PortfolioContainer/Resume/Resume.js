@@ -178,7 +178,7 @@ const Resume = (props) => {
                 fromDate = {projectDetails.duration.fromDate}
                 toDate = {projectDetails.duration.toDate}
                 />
-            ))}
+            ))};
         </div>,
 
         //INTERESTS
