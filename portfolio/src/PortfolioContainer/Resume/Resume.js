@@ -15,8 +15,8 @@ const Resume = (props) => {
         return;
         
         Animations.animations.fadeInScreen(props.id);
-      };
-  
+    };
+
     const fadeInSubscription =
         ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
@@ -38,7 +38,7 @@ const Resume = (props) => {
             <div className='resume-sub-heading'>
                 <span>{props.subHeading ? props.subHeading : ""}</span>
             </div>
-             <div className='resume-heading-description'>
+            <div className='resume-heading-description'>
                 <span>{props.description ? props.description : ""}</span>
             </div>
         </div>
@@ -82,7 +82,7 @@ const Resume = (props) => {
         {
             title: "Blah Blah",
             duration: {fromDate: "2021", toDate:"2022"},
-            description: "One time when I was little an older man tried to get me to help him find his puppy.",
+            description: "One time when I was little, an older man tried to get me to help him find his puppy.",
             subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS"
         },
     ];
@@ -178,7 +178,7 @@ const Resume = (props) => {
                 fromDate = {projectDetails.duration.fromDate}
                 toDate = {projectDetails.duration.toDate}
                 />
-            ))};
+            ))}
         </div>,
 
         //INTERESTS
@@ -187,13 +187,13 @@ const Resume = (props) => {
             heading = "Guitar Playing"
             description = "I love falling into the flow of music. It's very relaxing and fun."
             />
-                <ResumeHeading
+            <ResumeHeading
             heading = "Writing"
             description = "I love writing short stories. The places writing can take you can be places you didn't even know were in you."
             />
-                <ResumeHeading
+            <ResumeHeading
             heading = "Gardening"
-            description = "Watching plants grow is extremely rewarding. Getting to use what you grow is an added perk at the end. "
+            description = "Watching plants grow is extremely rewarding. Getting to use what you grow is an added perk at the end."
             />
         </div>
     ];
@@ -219,7 +219,6 @@ const Resume = (props) => {
                 />
                 <span className='bullet-label'>{bullet.label}</span>
                 {console.log(bullet.logoSrc)}
-
             </div>
         ));
     };
@@ -243,24 +242,23 @@ const Resume = (props) => {
     //   }, [fadeInSubscription]);
 
     return (
-     <div 
+    <div 
         className='resume-container screen-container' 
         id = {props.id || ""}
-     >
-         <div className='resume-content'>
-             <ScreenHeading title={'Resume'} subHeading={'My Formal Bio Details'}/>
-             <div className='resume-card'>
-                 <div className='resume-bullets'>
-                     <div className='bullet-container'>
-                         <div className='bullet-icons'></div>
-                         <div className='bullets'>{getBullets()}</div>
-                     </div>
-                 </div>
-
-                 <div className='resume-bullet-details'>{getResumeScreen()}</div>
-             </div>
-         </div>
-     </div>
+    >
+        <div className='resume-content'>
+            <ScreenHeading title={'Resume'} subHeading={'My Formal Bio Details'}/>
+            <div className='resume-card'>
+                <div className='resume-bullets'>
+                    <div className='bullet-container'>
+                        <div className='bullet-icons'></div>
+                        <div className='bullets'>{getBullets()}</div>
+                    </div>
+                </div>
+                <div className='resume-bullet-details'>{getResumeScreen()}</div>
+            </div>
+        </div>
+    </div>
     );
 };
 
