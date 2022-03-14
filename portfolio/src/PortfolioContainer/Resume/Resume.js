@@ -218,7 +218,6 @@ const Resume = (props) => {
                 alt = 'F'
                 />
                 <span className='bullet-label'>{bullet.label}</span>
-                {console.log(bullet.logoSrc)}
             </div>
         ));
     };

@@ -17,7 +17,7 @@ export default function Header() {
         let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
         if(screenIndex < 0)
         return;
-    }
+    };
     let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
 
     const getHeaderOptions = () => {
@@ -52,11 +52,11 @@ export default function Header() {
         setShowHeaderOptions(false);
     };
 
-    useEffect(() => {
-        return () => {
-          currentScreenSubscription.unsubscribe();
-        };
-      }, [currentScreenSubscription]);
+    // useEffect(() => {
+    //     return () => {
+    //       currentScreenSubscription.unsubscribe();
+    //     };
+    //   }, [currentScreenSubscription]);
     
     return (
         <div 
@@ -86,3 +86,6 @@ export default function Header() {
         </div>
     );
 }
+
+
+

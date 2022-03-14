@@ -30,18 +30,18 @@
 .separator-line{
     width: 100%;
     height: 2px;
-    background-color: #1f2235;
+    background-color: #1f221f;
 }
 
 .separator-blob{
     height: 10px;
     width: 100%;
     position: absolute;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-.separator-blob div{
+.separator-blob div {
     width: 35px;
     border-radius: 10px;
     background-color: var(--dark-orange);
