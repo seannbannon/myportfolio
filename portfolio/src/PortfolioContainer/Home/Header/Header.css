@@ -14,46 +14,46 @@
     color: var(--white);
 }
 
- .header-logo{
-     font-size: 50px;
-     font-family: "Poppins ExtraBold";
-     color: var(--white);
- }
+.header-logo{
+    font-size: 50px;
+    font-family: "Poppins ExtraBold";
+    color: var(--white);
+}
 /* this? */
- .header-options{
-     display: flex;
-     align-items: center;
- }
+.header-option{
+    display: flex;
+    align-items: center;
+}
 
- .header-option{
-     font-size: 16px;
-     cursor: pointer;
-     font-weight: 600;
- }
+.header-options{
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
- .header-hamburger{
-     display: none;
-     color: var(--white);
- }
+.header-hamburger{
+    display: none;
+    color: var(--white);
+}
 
- .header-option-separator{
+.header-option-separator{
     margin: 0 50px 0 0;
     color: var(--white);
- }
+}
 
- .selected-header-option{
-     color: #ff5832;
- }
+.selected-header-option{
+    color: #ff5832;
+}
 
  /* responsiveness */
  /* ipad pro */
- @media only screen and (max-width: 1110px){
+@media only screen and (max-width: 1110px){
     .header-parent{
         width: 80%;
     }
- }
+}
 
- @media only screen and (max-width: 970px){
+@media only screen and (max-width: 970px){
     .header-hamburger{
         display: block;
     }
@@ -77,7 +77,8 @@
         transition: all 0.8s ease-out;
     }
     .header-option-separator{
-        margin: 0;
+        margin: 0px 50px 0 0;
+        color: var(--white);
     }
     .selected-header-option{
         color: var(--white);
@@ -95,4 +96,4 @@
         left: 0;
         opacity: 1;
     }
- }
+}

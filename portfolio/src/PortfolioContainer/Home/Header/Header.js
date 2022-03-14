@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import {TOTAL_SCREENS, GET_SCREEN_INDEX} from '../../../utilities/commonUtils'
-import ScrollService from '../../../utilities/ScrollService'
-import {faBars} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import './Header.css'
+import React, { useState, useEffect } from 'react';
+import {TOTAL_SCREENS, GET_SCREEN_INDEX} from '../../../utilities/commonUtils';
+import ScrollService from '../../../utilities/ScrollService';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import './Header.css';
+import index from 'react-typical';
 
 
 export default function Header() {
@@ -51,11 +52,11 @@ export default function Header() {
         setShowHeaderOptions(false);
     };
 
-    // useEffect(() => {
-    //     return () => {
-    //       currentScreenSubscription.unsubscribe();
-    //     };
-    //   }, [currentScreenSubscription]);
+    useEffect(() => {
+        return () => {
+          currentScreenSubscription.unsubscribe();
+        };
+      }, [currentScreenSubscription]);
     
     return (
         <div 
@@ -83,5 +84,5 @@ export default function Header() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
