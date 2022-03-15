@@ -6,6 +6,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 
+
 export default function Testimonial(props) {
 let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
@@ -96,7 +97,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/lady.png" 
+                        src = "img/testimonial/mike.png" 
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Daisy Mae</h5>
@@ -181,7 +182,7 @@ return (
                     <p>CEO TransAtlantic Global</p> 
                 </div>
                 </div>
-            </div>
+            </div>  
 
 
             </OwlCarousel>
