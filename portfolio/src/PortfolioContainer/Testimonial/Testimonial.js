@@ -16,6 +16,29 @@ let fadeInScreenHandler = (screen) => {
 const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+    const options = {
+        loop: true,
+        margin: 0,
+        nav: true,
+        animateIn: "bounceInRight",
+        animateOut: "bounceOutRight",
+        dots: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        responsive: {
+            0:{
+                items : 1,
+            },
+            768:{
+                items : 1,
+            },
+            1000:{
+                items : 3,
+            },
+        }
+        
+    }
+
 return (
     <div>
     <ScreenHeading
@@ -25,7 +48,11 @@ return (
     <section className="testimonial-section" id={props.id || ""}>
         <div className="container">
         <div className="row">
-            <OwlCarousel className="owl-carousel" id="testimonial-carousel">
+            <OwlCarousel 
+            className="owl-carousel" 
+            id="testimonial-carousel" 
+            {...options}
+            >
 
             
             <div className="col-lg-12">
@@ -136,7 +163,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/lady.png" 
+                        src = "img/testimonial/man.png" 
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Daisy Mae</h5>
@@ -175,7 +202,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/lady.png" 
+                        src = "img/testimonial/ehiz.jpg" 
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Daisy Mae</h5>
