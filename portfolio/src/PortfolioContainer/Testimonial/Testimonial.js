@@ -7,7 +7,6 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css"
 
-
 export default function Testimonial(props) {
 let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
@@ -217,6 +216,11 @@ return (
         </div>
         </div>
     </section>
+    <div className="footer-image">
+        <img src="img/testimonial/shape-bg.png" alt= "No Internet Connection" />
+    </div>
     </div>
 );
 }
+
+
