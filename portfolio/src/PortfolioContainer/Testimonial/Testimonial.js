@@ -127,8 +127,8 @@ return (
                         src = "img/testimonial/mike.png" 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Daisy Mae</h5>
-                    <p>CEO TransAtlantic Global</p> 
+                    <h5> Mike Jones</h5>
+                    <p>CEO of Swishahouse Records</p> 
                 </div>
                 </div>
             </div>
@@ -166,8 +166,8 @@ return (
                         src = "img/testimonial/man.png" 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Daisy Mae</h5>
-                    <p>CEO TransAtlantic Global</p> 
+                    <h5>Thomas O'Malley</h5>
+                    <p>Manager at House of Mouse</p> 
                 </div>
                 </div>
             </div>
@@ -205,8 +205,8 @@ return (
                         src = "img/testimonial/ehiz.jpg" 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Daisy Mae</h5>
-                    <p>CEO TransAtlantic Global</p> 
+                    <h5>Ehiz Chow</h5>
+                    <p>Head Chef at La Boutique</p> 
                 </div>
                 </div>
             </div>  
