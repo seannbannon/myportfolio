@@ -29,10 +29,32 @@ return (
                 <div className="testi-item">
                 <div className="testi-comment">
                     <p>
+                            <i className="fa fa-quote-left"/>
                         I patronized Sean and when he delivered, I honestly
                         fell in love with the project he is a very honest guy and
                         he delivers ontime.
+                            <i className="fa fa-quote-right"/>
                     </p>
+                    <ul className="stars list-unstyled">
+                        <li>
+                            <i className="fa fa-star"/>
+                        </li>
+                        <li>
+                            <i className="fa fa-star"/>
+                        </li>
+                        <li>
+                            <i className="fa fa-star"/>
+                        </li>
+                        <li>
+                            <i className="fa fa-star-half-alt"/>
+                        </li>
+                        <li>
+                            <i className="fa fa-star"/>
+                        </li>
+                    </ul>
+                </div>
+                <div className="client-info">
+                    <img src = "img/testimonial/lady.png" alt = "No Internet Connection"></img>
                 </div>
                 </div>
             </div>
