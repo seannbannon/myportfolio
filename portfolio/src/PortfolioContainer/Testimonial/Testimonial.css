@@ -87,4 +87,19 @@
     left: 0;
     top: 0;
     border-radius: 50%;
+    position: absolute;
+}
+
+.testimonial-section .client-info h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0 0 2px;
+}
+
+.testimonial-section .client-info p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
 }
