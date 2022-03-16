@@ -6,6 +6,7 @@ import load1 from '../../../src/images/load2.gif';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
+import './ContactMe.css';
 
 export default function ContactMe(props) {
 
@@ -33,8 +34,6 @@ export default function ContactMe(props) {
     const handleMessage = (e) => {
         setMessage(e.target.value);
     };
-
-    console.log(name)
 
     return (
         <div 
