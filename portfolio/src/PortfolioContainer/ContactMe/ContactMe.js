@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Typical from 'react-typical';
 
 import imgBack from '../../../src/images/mailz.jpeg';
@@ -16,7 +16,13 @@ export default function ContactMe(props) {
     };
 
     const fadeInSubscription =
-        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+    const [name, setName] = useState ("")
+    const [email, setEmail] = useState ("")
+    const [message, setMessage] = useState ("")
+    const [banner, setBanner] = useState ("")
+    const [bool, setBool] = useState (false)
 
     return (
         <div 
@@ -55,8 +61,25 @@ export default function ContactMe(props) {
 
                     
                 </div>
+                <div className='back-form'>
+                    <div className='img-back'>
+                        <h4>Send Your Email Here!</h4>
+                        <img src = {imgBack} alt = "Image Not Found" />
+                    </div>
+                    <form>
+                        <p>{banner}</p>
+                        <label htmlFor='name'>Name</label>
+                        <input type= 'text'/>
+
+                        <label htmlFor='email'>Email</label>
+                        <input type= 'email'/>
+
+                        <label htmlFor='message'>Message</label>
+                        <input type= 'text'/>
+                    </form>
+                </div>
             </div>
         
         </div>
-    )
+    );
 }
