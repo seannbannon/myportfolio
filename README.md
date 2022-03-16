@@ -7,3 +7,4 @@ need to fix:
 header spacing/functionality 
 hamburger on mobile
 (maybe responsiveness, a little)
+background needs to wrap smoother
