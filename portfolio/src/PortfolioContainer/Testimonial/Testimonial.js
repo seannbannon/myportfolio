@@ -9,7 +9,7 @@ import "./Testimonial.css"
 
 export default function Testimonial(props) {
 let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
 };
 
@@ -45,7 +45,7 @@ return (
         title={"Testimonial"}
         subHeading={"What My Clients Say About Me"}
     />
-    <section className="testimonial-section" id={props.id || ""}>
+    <section className="testimonial-section fade-in" id={props.id || ""}>
         <div className="container">
         <div className="row">
             <OwlCarousel 

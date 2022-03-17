@@ -13,7 +13,7 @@ import './ContactMe.css';
 export default function ContactMe(props) {
 
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id)
+        if(screen.fadeInScreen !== props.id)
         return;
         Animations.animations.fadeInScreen(props.id)
     };
@@ -65,7 +65,7 @@ export default function ContactMe(props) {
 
     return (
         <div 
-        className='main-container'
+        className='main-container fade-in'
         id = {props.id || ''}
         >
 
