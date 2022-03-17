@@ -1,5 +1,5 @@
-import {TOTAL_SCREENS} from './commonUtils'
-import {Subject} from 'rxjs'
+import {TOTAL_SCREENS} from './commonUtils';
+import {Subject} from 'rxjs';
 
 export default class ScrollService{
     static scrollHandler = new ScrollService();
@@ -10,8 +10,9 @@ export default class ScrollService{
         window.addEventListener('scroll', this.checkCurrentScreenUnderViewport);
     }
     scrollToHireMe = () => {
-        let contactMeScreen = document.getElementById("Contact Me");
+        let contactMeScreen = document.getElementById("ContactMe");
         if(!contactMeScreen) return;
+
         contactMeScreen.scrollIntoView({behavior: 'smooth'});
     }
     scrollToHome = () => {
