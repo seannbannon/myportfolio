@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Typical from 'react-typical';
+import axios from 'axios';
+import {toast} from 'react-toastify';
 
 import imgBack from '../../../src/images/mailz.jpeg';
 import load1 from '../../../src/images/load2.gif';
@@ -34,6 +36,32 @@ export default function ContactMe(props) {
     const handleMessage = (e) => {
         setMessage(e.target.value);
     };
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+        try {
+            let data = {
+                name,
+                email,
+                message,
+            };
+            setBool(true)
+            const res = await axios.post(`/contact`, data)
+            if(name.length === 0 || email.length === 0 || message.length === 0){
+                setBanner(res.data.msg)
+                toast.error(res.data.msg)
+                setBool (false)
+            }else if(res.status === 200){
+                setBanner(res.data.msg)
+                toast.success(res.data.msg)
+                setBool (false)
+            }
+
+        } catch (error){
+            console.log(error)
+        }
+    };
+
 
     return (
         <div 
@@ -77,7 +105,7 @@ export default function ContactMe(props) {
                         <h4>Send Your Email Here!</h4>
                         <img src = {imgBack} alt = "Image Not Found" />
                     </div>
-                    <form>
+                    <form onSubmit={submitForm }>
                         <p>{banner}</p>
 
                         <label htmlFor='name'>Name</label>
@@ -100,8 +128,11 @@ export default function ContactMe(props) {
 
                         <div className='send-btn'>
                             <button type='submit'>
-                                SEND
+                                Send
                                 <i className='fa fa-paper-plane'/>
+                                {bool ? (<b className='load'>
+                                    <img src={load1} alt = 'Image not Found'/>
+                                    </b> ) : ("")}
                             </button>    
                         </div>
                     </form>
@@ -111,3 +142,6 @@ export default function ContactMe(props) {
         </div>
     );
 }
+
+
+// question mark means, if (x is true), then etc
