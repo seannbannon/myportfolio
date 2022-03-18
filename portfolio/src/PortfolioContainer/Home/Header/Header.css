@@ -20,13 +20,13 @@
     color: var(--white);
 }
 
-.header-options{
+.header-options {
     display: flex;
     align-items: center;
-
+    cursor: pointer;
 }
 
-.header-options {
+.header-option {
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
