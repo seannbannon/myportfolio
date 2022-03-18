@@ -4,7 +4,6 @@ import ScrollService from '../../../utilities/ScrollService';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './Header.css';
-import index from 'react-typical';
 
 
 export default function Header() {
@@ -21,24 +20,24 @@ export default function Header() {
     let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
 
     const getHeaderOptions = () => {
-        return TOTAL_SCREENS.map((screen, i) => (
+        return TOTAL_SCREENS.map((Screen, i) => (
                 <div 
-                    key = {screen.screen_name} 
+                    key = {Screen.screen_name} 
                     className = {getHeaderOptionsClass(i)}
-                    onClick = {() => switchScreen(i, screen)}
+                    onClick = {() => switchScreen(i, Screen)}
                 >
-                    <span>{screen.screen_name}</span>
+                    <span>{Screen.screen_name}</span>
                 </div>
         ));
     };
 
     const getHeaderOptionsClass = (index) => {
-        let classes = "header-options";
+        let classes = "header-option";
         if (index < TOTAL_SCREENS.length -1)
         classes += "header-option-separator";
 
         if (selectedScreen === index)
-        classes += "selected-header-options";
+        classes += "selected-header-option";
         return classes;
     };
 
@@ -47,7 +46,7 @@ export default function Header() {
         if(!screenComponent)
         return;
 
-        screenComponent.scrolllIntoView({behavior: 'smooth'});
+        screenComponent.scrollIntoView({behavior: 'smooth'});
         setSelectedScreen(index);
         setShowHeaderOptions(false);
     };
