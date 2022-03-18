@@ -1,5 +1,5 @@
-import React from 'react'
-import { TOTAL_SCREENS } from '../utilities/commonUtils'
+import React from 'react';
+import { TOTAL_SCREENS } from '../utilities/commonUtils';
 
 export default function PortfolioContainer() {
 
@@ -12,9 +12,9 @@ export default function PortfolioContainer() {
         )
     }
 
-  return (
+return (
     <div className='portfolio-container'>
         {mapAllScreens()}
     </div>
-  )
+)
 }

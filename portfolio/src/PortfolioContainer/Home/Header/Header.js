@@ -7,7 +7,7 @@ import './Header.css';
 
 
 export default function Header() {
-    const [selectedScreen,setSelectedScreen] = useState(0);
+    const [selectedScreen, setSelectedScreen] = useState(0);
     const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
     const updateCurrentScreen = (currentScreen) => {
@@ -23,7 +23,7 @@ export default function Header() {
         return TOTAL_SCREENS.map((Screen, i) => (
                 <div 
                     key = {Screen.screen_name} 
-                    className = {getHeaderOptionsClass(i)}
+                    className = {getHeaderOptionsClasses(i)}
                     onClick = {() => switchScreen(i, Screen)}
                 >
                     <span>{Screen.screen_name}</span>
@@ -31,7 +31,7 @@ export default function Header() {
         ));
     };
 
-    const getHeaderOptionsClass = (index) => {
+    const getHeaderOptionsClasses = (index) => {
         let classes = "header-option";
         if (index < TOTAL_SCREENS.length -1)
         classes += "header-option-separator";
@@ -51,11 +51,11 @@ export default function Header() {
         setShowHeaderOptions(false);
     };
 
-    // useEffect(() => {
-    //     return () => {
-    //       currentScreenSubscription.unsubscribe();
-    //     };
-    //   }, [currentScreenSubscription]);
+    useEffect(() => {
+        return () => {
+        currentScreenSubscription.unsubscribe();
+        };
+    }, [currentScreenSubscription]);
     
     return (
         <div 
@@ -65,7 +65,7 @@ export default function Header() {
             <div className='header-parent'>
                 <div 
                     className='header-hamburger' 
-                    onClick ={() => setShowHeaderOptions(!showHeaderOptions)}
+                    onClick = {() => setShowHeaderOptions(!showHeaderOptions)}
                 >
                     <FontAwesomeIcon className='header-hamburger-bars' icon = {faBars}/>
                 </div>
@@ -85,6 +85,3 @@ export default function Header() {
         </div>
     );
 }
-
-
-
