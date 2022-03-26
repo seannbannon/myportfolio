@@ -15,8 +15,6 @@ router.post('/contact', (req, res) =>{
                 pass: 'password'
             }
         })
-
-        // butt ass 
         
         let mailOptions = {
             from: data.email,
