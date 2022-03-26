@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const nodemailer = require(nodemailer);
+const nodemailer = require("nodemailer");
 
 router.post('/contact', (req, res) =>{
     let data = req.body
