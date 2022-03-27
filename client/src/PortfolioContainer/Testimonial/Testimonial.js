@@ -5,7 +5,15 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import "./Testimonial.css"
+import "./Testimonial.css";
+import lady from "../../../src/img/Testimonial/lady.png";
+import mike from "../../../src/img/Testimonial/mike.png";
+import man from "../../../src/img/Testimonial/man.png";
+import ehiz from "../../../src/img/Testimonial/ehiz.jpg";
+import shape from "../../../src/img/Testimonial/shape-bg.png"
+
+
+
 
 export default function Testimonial(props) {
 let fadeInScreenHandler = (screen) => {
@@ -85,7 +93,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/lady.png" 
+                        src = {lady}
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Daisy Mae</h5>
@@ -124,7 +132,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/mike.png" 
+                        src = {mike} 
                         alt = "No Internet Connection"
                     ></img>
                     <h5> Mike Jones</h5>
@@ -163,7 +171,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/man.png" 
+                        src = {man} 
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Thomas O'Malley</h5>
@@ -202,7 +210,7 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = "img/testimonial/ehiz.jpg" 
+                        src = {ehiz} 
                         alt = "No Internet Connection"
                     ></img>
                     <h5>Ehiz Chow</h5>
@@ -217,7 +225,7 @@ return (
         </div>
     </section>
     <div className="footer-image">
-        <img src="img/testimonial/shape-bg.png" alt= "No Internet Connection" />
+        <img src={shape} alt= "No Internet Connection" />
     </div>
     </div>
 );
