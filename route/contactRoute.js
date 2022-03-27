@@ -21,7 +21,7 @@ router.post('/contact', (req, res) => {
             to: 'bolognaemailstuff@gmail.com',
             subject: `Message from $(data.name)`,
             html: `
-            <h3>Informations<h3/> 
+            <h3>Information<h3/> 
             <ul>
             <li>Name: ${data.name}</li>
             <li>Email: ${data.email}</li>
