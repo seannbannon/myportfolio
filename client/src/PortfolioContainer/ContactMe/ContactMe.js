@@ -45,20 +45,20 @@ export default function ContactMe(props) {
                 email,
                 message,
             };
-            setBool(true)
-            const res = await axios.post(`/contact`, data)
+            setBool(true);
+            const res = await axios.post(`/contact`, data);
             if(name.length === 0 || email.length === 0 || message.length === 0){
-                setBanner(res.data.msg)
-                toast.error(res.data.msg)
-                setBool (false)
+                setBanner(res.data.msg);
+                toast.error(res.data.msg);
+                setBool (false);
             }else if(res.status === 200){
-                setBanner(res.data.msg)
-                toast.success(res.data.msg)
-                setBool (false)
+                setBanner(res.data.msg);
+                toast.success(res.data.msg);
+                setBool (false);
             }
 
         } catch (error){
-            console.log(error)
+            console.log(error);
         }
     };
 
