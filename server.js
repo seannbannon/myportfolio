@@ -13,4 +13,4 @@ app.use(cors());
 app.use("/", contactRoute);
 
 const port = process.env.PORT || 4000;
-app.listen(port, console.log(`Server Listeing To Port 4000 Only`));
+app.listen(port, console.log(`Server Listening To Port 4000`));

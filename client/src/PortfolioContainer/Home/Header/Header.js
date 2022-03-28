@@ -14,7 +14,7 @@ export default function Header() {
         if (currentScreen || !currentScreen.screenInView)
         return;
         let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
-        if(screenIndex < 0)
+        if (screenIndex < 0)
         return;
     };
     let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
@@ -33,7 +33,7 @@ export default function Header() {
 
     const getHeaderOptionsClasses = (index) => {
         let classes = "header-option";
-        if (index < TOTAL_SCREENS.length -1)
+        if (index < TOTAL_SCREENS.length - 1)
         classes += "header-option-separator";
 
         if (selectedScreen === index)
@@ -67,13 +67,13 @@ export default function Header() {
                     className='header-hamburger' 
                     onClick = {() => setShowHeaderOptions(!showHeaderOptions)}
                 >
-                    <FontAwesomeIcon className='header-hamburger-bars' icon = {faBars}/>
+                    <FontAwesomeIcon className='header-hamburger-bars' icon = {faBars} />
                 </div>
-                <div className='header-logo'>
+                <div className = 'header-logo'>
                     <span>SEAN</span>
                 </div>
                 <div 
-                    className={
+                    className = {
                         showHeaderOptions
                             ? "header-options show-hamburger-options"
                             : "header-options"
