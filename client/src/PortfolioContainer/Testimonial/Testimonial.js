@@ -10,7 +10,7 @@ import lady from "../../../src/img/Testimonial/lady.png";
 import mike from "../../../src/img/Testimonial/mike.png";
 import man from "../../../src/img/Testimonial/man.png";
 import ehiz from "../../../src/img/Testimonial/ehiz.jpg";
-import shape from "../../../src/img/Testimonial/shape-bg.png"
+// import shape from "../../../src/img/Testimonial/shape-bg.png"
 
 
 
@@ -225,7 +225,7 @@ return (
         </div>
     </section>
     <div className="footer-image">
-        <img src={shape} alt= "No Internet Connection" />
+        <img src={require ('../../../src/img/Testimonial/shape-bg.png')} alt= "No Internet Connection" />
     </div>
     </div>
 );
