@@ -25,12 +25,12 @@
     align-items: center;
     gap: 30px;
     cursor: pointer;
+    font-weight: 600;
+
 } 
 
 .header-option {
     font-size: 16px;
-    cursor: pointer;
-    font-weight: 600;
 }
 
 .header-hamburger{
@@ -44,7 +44,7 @@
 }
 
 .selected-header-option{
-    color: #ff5832;
+    color: var(--dark-orange);
 }
 
  /* responsiveness */
