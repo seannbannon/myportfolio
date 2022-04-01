@@ -6,9 +6,9 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
-import lady from "../../../src/img/Testimonial/lady.png";
+import einstein from "../../../src/img/Testimonial/einstein.png";
 import mike from "../../../src/img/Testimonial/mike.png";
-import man from "../../../src/img/Testimonial/man.png";
+import trump from "../../../src/img/Testimonial/trump.jpg";
 import ehiz from "../../../src/img/Testimonial/ehiz.jpg";
 import shape from "../../../src/img/Testimonial/shape-bg.png"
 
@@ -68,12 +68,13 @@ return (
                 <div className="testi-comment">
                     <p>
                             <i className="fa fa-quote-left"/>
-                        I patronized Sean and when he delivered, I honestly
-                        fell in love with the project he is a very honest guy and
-                        he delivers ontime.
+                        Taught me everything I know.
                             <i className="fa fa-quote-right"/>
                     </p>
                     <ul className="stars list-unstyled">
+                        <li>
+                            <i className="fa fa-star"/>
+                        </li>
                         <li>
                             <i className="fa fa-star"/>
                         </li>
@@ -93,11 +94,11 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = {lady}
+                        src = {einstein}
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Daisy Mae</h5>
-                    <p>CEO TransAtlantic Global</p> 
+                    <h5>Albert Einstein</h5>
+                    <p>Theoretical Physicist</p> 
                 </div>
                 </div>
             </div>
@@ -146,9 +147,8 @@ return (
                 <div className="testi-comment">
                     <p>
                             <i className="fa fa-quote-left"/>
-                        I patronized Sean and when he delivered, I honestly
-                        fell in love with the project he is a very honest guy and
-                        he delivers ontime.
+                        Sean is a tremendous guy. Huge potential. Believe me. 
+                        You would be very, very lucky to have him on your team.
                             <i className="fa fa-quote-right"/>
                     </p>
                     <ul className="stars list-unstyled">
@@ -171,11 +171,11 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = {man} 
+                        src = {trump} 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Thomas O'Malley</h5>
-                    <p>Manager at House of Mouse</p> 
+                    <h5>Donald J Trump</h5>
+                    <p>Former President of the United States</p> 
                 </div>
                 </div>
             </div>

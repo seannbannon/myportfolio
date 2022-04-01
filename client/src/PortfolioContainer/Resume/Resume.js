@@ -184,8 +184,8 @@ const Resume = (props) => {
         //INTERESTS
         <div className='resume-screen-container'  key = "interests">
             <ResumeHeading
-            heading = "Guitar Playing"
-            description = "I love falling into the flow of music. It's very relaxing and fun."
+            heading = "Making Music"
+            description = "I love falling into the flow of music. Creating sounds using my guitar, banjo, or bass; or experimenting with completely foreign instruments"
             />
             <ResumeHeading
             heading = "Writing"
@@ -193,7 +193,7 @@ const Resume = (props) => {
             />
             <ResumeHeading
             heading = "Gardening"
-            description = "Watching plants grow is extremely rewarding. Getting to use what you grow is an added perk at the end."
+            description = "Watching plants grow is extremely rewarding within itself. Getting to use what you grow is an additional perk."
             />
         </div>
     ];
