@@ -25,7 +25,7 @@
     align-items: center;
     gap: 30px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
 
 } 
 
@@ -94,7 +94,7 @@
         margin: 0px 10px;
         color: var(--white);
     }
-    .show-hamburger-option{
+    .show-hamburger-options{
         left: 0;
         opacity: 1;
     }
