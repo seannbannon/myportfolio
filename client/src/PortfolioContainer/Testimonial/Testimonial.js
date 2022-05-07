@@ -7,9 +7,9 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
 import einstein from "../../../src/img/Testimonial/einstein.png";
-import mike from "../../../src/img/Testimonial/mike.png";
+import jesus from "../../../src/img/Testimonial/jesus.png";
 import trump from "../../../src/img/Testimonial/trump.jpg";
-import ehiz from "../../../src/img/Testimonial/ehiz.jpg";
+import chris from "../../../src/img/Testimonial/chris.jpg";
 import shape from "../../../src/img/Testimonial/shape-bg.png"
 
 
@@ -108,9 +108,8 @@ return (
                 <div className="testi-comment">
                     <p>
                             <i className="fa fa-quote-left"/>
-                        I patronized Sean and when he delivered, I honestly
-                        fell in love with the project he is a very honest guy and
-                        he delivers ontime.
+                            I died on the cross so you could hire Sean. Don't make me regret my decision. 
+                            Contact Sean right now, or face eternal damnation.
                             <i className="fa fa-quote-right"/>
                     </p>
                     <ul className="stars list-unstyled">
@@ -133,11 +132,11 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = {mike} 
+                        src = {jesus} 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5> Mike Jones</h5>
-                    <p>CEO of Swishahouse Records</p> 
+                    <h5> Jesus Christ</h5>
+                    <p>Son of God</p> 
                 </div>
                 </div>
             </div>
@@ -186,8 +185,8 @@ return (
                     <p>
                             <i className="fa fa-quote-left"/>
                         I patronized Sean and when he delivered, I honestly
-                        fell in love with the project he is a very honest guy and
-                        he delivers ontime.
+                        fell in love with the project, he is a very honest guy and
+                        he delivers on time.
                             <i className="fa fa-quote-right"/>
                     </p>
                     <ul className="stars list-unstyled">
@@ -210,11 +209,11 @@ return (
                 </div>
                 <div className="client-info">
                     <img 
-                        src = {ehiz} 
+                        src = {chris} 
                         alt = "No Internet Connection"
                     ></img>
-                    <h5>Ehiz Chow</h5>
-                    <p>Head Chef at La Boutique</p> 
+                    <h5>Chris Jones</h5>
+                    <p>Restaurant Owner at La Boutique</p> 
                 </div>
                 </div>
             </div>  

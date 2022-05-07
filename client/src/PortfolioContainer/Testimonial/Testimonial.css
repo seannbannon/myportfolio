@@ -37,6 +37,8 @@
 .testimonial-section .testi-item{
     background-color: white;
     padding: 30px;
+
+    height: 300px;
     border-radius: 50px 50px 50px 0px;
 }
 
@@ -86,6 +88,7 @@
     border-color: black;
     left: 0;
     top: 0;
+    bottom: 0;
     border-radius: 50%;
     position: absolute;
 }

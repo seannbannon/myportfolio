@@ -74,16 +74,16 @@ const Resume = (props) => {
             subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS",
         },
         {
-            title: "Filler in L8r",
-            duration: {fromDate: "2021", toDate:"2022"},
-            description: "This is filler words, la la la",
-            subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS"
+            title: "Flappy Bird",
+            duration: {fromDate: "2021", toDate:"2021"},
+            description: "Flappy Bird Clone, the game",
+            subHeading: "Technologies Used: HTML, CSS, Javascript"
         },
         {
-            title: "Blah Blah",
-            duration: {fromDate: "2021", toDate:"2022"},
-            description: "One time when I was little, an older man tried to get me to help him find his puppy.",
-            subHeading: "Technologies Used: ReactJS, Bootstrap, RxJS"
+            title: "Tech Blog",
+            duration: {fromDate: "2021", toDate:"2021"},
+            description: "Tech Blog with Login functionality as well as Create and Edit Post functionality.",
+            subHeading: "Technologies Used: Handlebars, MySQL, Express, Javascript"
         },
     ];
 
