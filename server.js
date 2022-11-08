@@ -5,6 +5,8 @@ const path = require("path");
 const contactRoute = require('./route/contactRoute');
 
 const app = express();
+const PORT = process.env.PORT || 4000;
+
 
 //creating the middleware
 app.use(express.json());
@@ -19,5 +21,4 @@ if (process.env.NODE_ENV === "production") {
     );
 }
 
-const PORT = process.env.PORT || 4000;
 app.listen(PORT, console.log(`Server Listening To Port 4000`));
